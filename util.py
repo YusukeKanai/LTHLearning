@@ -31,7 +31,7 @@ def create_masks(initial_model, final_model, pruning_rates, is_gpu=False):
 
         # create filter
         xp = cp if is_gpu else np
-        layer_mask = xp.ones(layer_size)
+        layer_mask = xp.ones(layer_size, dtype='float32')
         mask_target = sort_seed.argsort()[:prune_num]
         layer_mask[mask_target] = 0
         layer_mask = layer_mask.reshape(input_layer.shape)
