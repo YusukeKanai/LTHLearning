@@ -48,7 +48,7 @@ def generate_trainer(pruning_rate):
     return trainer
 
 
-def main(i):
+def main():
     rate_range = range(0, 100, 1)
 
     for pruning_rate in rate_range:
@@ -62,18 +62,18 @@ def main(i):
         result_list.append([pruning_rate, res.iteration, res.accuracy])
 
     df = pd.DataFrame(result_list, columns=['pruning_rate', "iteration", 'accuracy'])
-    df.to_csv(os.path.join(REPORT_DIR, f'pruning_accuracy{i}.csv'))
+    df.to_csv(os.path.join(REPORT_DIR, f'pruning_accuracy.csv'))
 
     df.set_index('pruning_rate')['iteration'].plot()
-    plt.savefig(os.path.join(REPORT_DIR, f'pruning_iteration{i}.png'))
+    plt.savefig(os.path.join(REPORT_DIR, f'pruning_iteration.png'))
 
     plt.figure()
 
     df.set_index('pruning_rate')['accuracy'].plot()
-    plt.savefig(os.path.join(REPORT_DIR, f'pruning_accuracy{i}.png'))
+    plt.savefig(os.path.join(REPORT_DIR, f'pruning_accuracy.png'))
 
     plt.close('all')
 
 
 if __name__ == '__main__':
-    main(1)
+    main()
