@@ -1,0 +1,1 @@
+# Results of the influence of initial weight for pruning mask
