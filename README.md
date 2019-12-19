@@ -1,6 +1,6 @@
 # Replicating the experiments of "_The lottery ticket hypothesis_"
 
-This repository contains the implementation to replicate the experiments "__Lottery Ticket Hypothesis__", and will be referd from [Qiita](https://qiita.com/): a technical knowledge sharing and collaboration site for programmers.
+This repository contains the implementation to replicate the experiments "__Lottery Ticket Hypothesis__". The detail explanation of the concepts are described in [this site](https://qiita.com/YusukeKanai/private/9b7f6ba7472f782a5b3b) 
 
 ## References
 [THE LOTTERY TICKET HYPOTHESIS: FINDING SPARSE, TRAINABLE NEURAL NETWORK](https://openreview.net/pdf?id=rJl-b3RcF7)
