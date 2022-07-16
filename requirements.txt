@@ -1,5 +1,5 @@
 cupy=6.5.0
 chainer=6.5.0
-numpy=1.17.4
+numpy=1.22.0
 matplotlib=3.0.0
 pandas=0.22.0
